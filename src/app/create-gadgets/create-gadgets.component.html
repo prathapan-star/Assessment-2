@@ -1,0 +1,64 @@
+<div class="container custom-container mb-5">
+    <div class="col-md-12">
+        <h3 class="mb-3 text-center">Create Gadgets</h3>
+        <!-- <div class="mb-3">
+            <input type="text" [(ngModel)]="gadgetDetails.id" class="form-control" placeholder="ID">
+        </div> -->
+        <div class="form-group">
+            <label for="name">Gadget Name</label>
+            <input id="name" type="text" class="form-control" formControlName="name" >
+            <div  class="alert alert-danger"> 
+                <!-- This field is Required!    *ngIf="registrationForm.controls['name'].errors"-->
+                <p *ngIf="registrationForm.controls['name'].errors?.['required']">
+                    Gadget Name is required!
+                </p>
+            </div>
+        </div>
+        <!-- <div class="mb-3">
+            <input type="text" [(ngModel)]="gadgetDetails.name" class="form-control" placeholder="Name">
+        </div> -->
+        <div class="form-group">
+            <label for="price">Gadget Price</label>
+            <input id="price" type="number" class="form-control" formControlName="price" >
+            <div *ngIf="registrationForm.controls['price'].errors" class="alert alert-danger">
+                This field is Required!
+                <p *ngIf="registrationForm.controls['price'].errors?.['required']">
+                    Gadget Price is required!
+                </p>
+            </div>
+        </div>
+        <!-- <div class="mb-3">
+            <input type="number" [(ngModel)]="gadgetDetails.price" class="form-control" placeholder="Price">
+        </div> -->
+        <div class="form-group">
+            <label for="desc">Gadget Descriptions</label>
+            <input id="desc" type="number" class="form-control" formControlName="desc" >
+            <div *ngIf="registrationForm.controls['desc'].errors" class="alert alert-danger">
+                This field is Required!
+                <p *ngIf="registrationForm.controls['desc'].errors?.['required']">
+                    Gadget Descriptions is required!
+                </p>
+            </div>
+        </div>
+        <!-- <div class="mb-3">
+            <input type="text" [(ngModel)]="gadgetDetails.img" class="form-control" placeholder="Img-Address">
+        </div> -->
+        <div class="form-group">
+            <label for="img">Gadget Image URL</label>
+            <input id="img" type="text" class="form-control" formControlName="img" >
+            <div *ngIf="registrationForm.controls['img'].errors" class="alert alert-danger">
+                This field is Required!
+                <p *ngIf="registrationForm.controls['img'].errors?.['required']">
+                    Gadget Image is required!
+                </p>
+            </div>
+        </div><br>
+        <!-- <div class="mb-3">
+            <input type="text" [(ngModel)]="gadgetDetails.desc" class="form-control" placeholder="Description">
+        </div> -->
+        <div>
+            <button class="btn btn-warning btn-lg btn-block"
+            (click)="addGadget(gadgetDetails)">Create-Gadget</button>
+        </div>
+    </div>
+</div>

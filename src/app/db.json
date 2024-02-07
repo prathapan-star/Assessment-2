@@ -1,0 +1,39 @@
+{
+  "gadgets": [
+    {
+      "id": "1",
+      "name": "mobiles",
+      "price": 15000,
+      "desc": "Philippe Kahn created the first camera phone solution to share pictures instantly on public networks. The impetus for this invention was the birth of Kahn's daughter, when he jerry-rigged a mobile phone with a digital camera and sent photos in real time.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEQ9sjxU59MBcNNOMEIT91W7NE2idD5mG_CHg3hJcqw&s"
+    },
+    {
+      "id": "2",
+      "name": "chargers",
+      "price": 15000,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEQ9sjxU59MBcNNOMEIT91W7NE2idD5mG_CHg3hJcqw&s",
+      "desc": "Philippe Kahn created the first camera phone solution to share pictures instantly on public networks. The impetus for this invention was the birth of Kahn's daughter, when he jerry-rigged a mobile phone with a digital camera and sent photos in real time."
+    },
+    {
+      "id": "3",
+      "name": "mac-book",
+      "price": 150000,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEQ9sjxU59MBcNNOMEIT91W7NE2idD5mG_CHg3hJcqw&s",
+      "desc": "Philippe Kahn created the first camera phone solution to share pictures instantly on public networks. The impetus for this invention was the birth of Kahn's daughter, when he jerry-rigged a mobile phone with a digital camera and sent photos in real time."
+    },
+    {
+      "id": "4",
+      "name": "tablets",
+      "price": 10000,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEQ9sjxU59MBcNNOMEIT91W7NE2idD5mG_CHg3hJcqw&s",
+      "desc": "Philippe Kahn created the first camera phone solution to share pictures instantly on public networks. The impetus for this invention was the birth of Kahn's daughter, when he jerry-rigged a mobile phone with a digital camera and sent photos in real time."
+    },
+    {
+      "id": "5",
+      "name": "earphones",
+      "price": 500,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEQ9sjxU59MBcNNOMEIT91W7NE2idD5mG_CHg3hJcqw&s",
+      "desc": "Philippe Kahn created the first camera phone solution to share pictures instantly on public networks. The impetus for this invention was the birth of Kahn's daughter, when he jerry-rigged a mobile phone with a digital camera and sent photos in real time."
+    }
+  ]
+}

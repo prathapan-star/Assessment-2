@@ -1,0 +1,60 @@
+<div class="main container">
+    <form [formGroup]="searchForm">
+        <div id="search">
+            <input type="text" formControlName="searchText" (keyup)="onSearchTextChange($event)" placeholder="Search here !!! ">
+        </div>
+        <div id="search">
+            <button class="btn btn-success" routerLink="/create-gadgets" >Add-Gadget</button>
+        </div>
+    </form>
+</div>
+<!-- <div>
+    <button class="btn btn-success" (click)="redirectAddGadget()" >Add-Gadget</button>
+</div> -->
+
+<div class="container custom-container-2 mt-5">
+    <!-- Show it when there is no employee -->
+    <div class="no-data text-center" *ngIf="Gadget.length == 0">
+        <p>There is no employee added yet !</p>
+        <button type="submit" class="btn btn-outline-primary" routerLink="/create-gadgets">
+            Add Employee
+        </button>
+    </div>
+    <div *ngIf="Gadget.length != 0">
+        <h3 class="mb-3 text-center">Gadgets-List</h3>
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Gadget-ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">price</th>
+                        <th scope="col">Desc</th>
+                        <th scope="col">Images</th>
+                        <th scope="col">Action</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let g of Gadget">
+                        <td>{{g.id}}</td>
+                        <td>{{g.name}}</td>
+                        <td>{{g.price}}</td>
+                        <td>{{g.desc}}</td>
+                        <td><img src="{{g.img}}"></td>
+                        <td>
+                            <span class="edit btn btn-sm btn-outline-success me-2 "
+                            routerLink="/edit-gadgets/{{g.id}}">Edit
+                            </span>
+                        </td>
+                        <td>
+                            <span class="delete edit btn btn-sm btn-outline-danger"
+                            (click)="deleteGadget(g.id)">
+                            Delete</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
